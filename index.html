@@ -16,47 +16,75 @@
     <a href="support.html">Hỗ trợ</a>
   </nav>
 
-  <span class="tag">Cập nhật 24/11/2026</span>
+  <span class="tag">Cập nhật 28/11/2026</span>
   <h1>Chính sách quyền riêng tư</h1>
-  <p class="lede">Áp dụng cho ứng dụng iOS “Học tiếng Đức: A1–B2”. Chúng tôi chỉ thu thập những gì cần để lưu và đồng bộ tiến độ học của bạn.</p>
+  <p class="lede">Áp dụng cho ứng dụng “Học tiếng Đức A1–B2: Goethe” trên iOS (App Store) và Android (Google Play). Chúng tôi lưu những gì cần để đồng bộ tiến độ học, và dùng Google AdMob để hiển thị quảng cáo cho người dùng chưa mua Premium.</p>
 
   <section>
     <h2>Dữ liệu chúng tôi lưu</h2>
     <ul>
       <li><strong>Mã người dùng ẩn danh.</strong> Khi mở app lần đầu, app tạo một tài khoản khách ẩn danh qua Firebase Authentication để sao lưu tiến độ.</li>
-      <li><strong>Email và mật khẩu</strong> — chỉ khi bạn tự tạo tài khoản để đồng bộ giữa các máy. Mật khẩu do Firebase quản lý, chúng tôi không xem được.</li>
+      <li><strong>Tên và email</strong> — chỉ khi bạn tự đăng nhập bằng email và mật khẩu, Google hoặc Apple để đồng bộ giữa các máy. Mật khẩu do Firebase quản lý, chúng tôi không xem được.</li>
       <li><strong>Tiến độ học:</strong> bài đã học, thẻ ôn tập, điểm XP theo ngày, thống kê, từ đã đánh dấu, cài đặt và kết quả bài thi. Dữ liệu này lưu trên máy bạn và trên Cloud Firestore của Google Firebase.</li>
+      <li><strong>Trạng thái Premium.</strong> Việc thanh toán do App Store hoặc Google Play xử lý. Chúng tôi không nhận số thẻ hay thông tin thanh toán của bạn, chỉ biết tài khoản cửa hàng của bạn đã mua Premium hay chưa.</li>
     </ul>
   </section>
 
   <section>
+    <h2>Quảng cáo (Google AdMob)</h2>
+    <p>Bản miễn phí hiển thị quảng cáo qua Google AdMob: một banner trong nội dung và đôi khi một quảng cáo toàn màn hình sau khi học xong một bài. Người dùng Premium không thấy quảng cáo, và AdMob không được tải cho họ.</p>
+    <p>Để hiển thị và đo lường quảng cáo, AdMob có thể thu thập:</p>
+    <ul>
+      <li><strong>Mã nhận dạng quảng cáo</strong> của thiết bị (IDFA trên iOS, Android Advertising ID trên Android);</li>
+      <li><strong>Vị trí ước chừng</strong> suy ra từ địa chỉ IP (không dùng GPS);</li>
+      <li><strong>Tương tác với quảng cáo</strong> như lượt xem và lượt chạm;</li>
+      <li><strong>Thông tin thiết bị và chẩn đoán</strong> như loại máy, hệ điều hành, ngôn ngữ, nhật ký sự cố và hiệu suất.</li>
+    </ul>
+    <p>Dữ liệu này dùng để chọn và hiển thị quảng cáo, giới hạn tần suất, đo hiệu quả quảng cáo và chống gian lận. Dữ liệu tiến độ học, email và tên của bạn <strong>không</strong> được gửi cho AdMob.</p>
+    <p><strong>Lựa chọn của bạn:</strong></p>
+    <ul>
+      <li>Trên iOS, app chỉ dùng IDFA nếu bạn cho phép trong hộp thoại “Cho phép theo dõi” của Apple. Bạn có thể đổi trong Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi.</li>
+      <li>Ở Khu vực Kinh tế Châu Âu, Vương quốc Anh và Thụy Sĩ, app hỏi ý kiến bạn trước khi hiển thị quảng cáo cá nhân hoá. Bạn có thể đổi lựa chọn trong app ở <strong>Tiến độ → Cài đặt → Quyền riêng tư quảng cáo</strong>.</li>
+      <li>Trên Android, bạn có thể xoá hoặc đặt lại mã nhận dạng quảng cáo trong Cài đặt → Quyền riêng tư → Quảng cáo.</li>
+      <li>Mua Premium để tắt hẳn quảng cáo.</li>
+    </ul>
+    <p>Google xử lý dữ liệu này theo <a href="https://policies.google.com/technologies/partner-sites">cách Google sử dụng dữ liệu từ ứng dụng của đối tác</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</p>
+  </section>
+
+  <section>
     <h2>Micro và nhận dạng giọng nói</h2>
-    <p>Khi bạn luyện phát âm, app dùng micro và dịch vụ nhận dạng giọng nói của Apple để so sánh câu bạn nói với câu mẫu. Chúng tôi không ghi âm, không lưu và không gửi giọng nói của bạn lên máy chủ của mình. Việc xử lý giọng nói tuân theo chính sách quyền riêng tư của Apple.</p>
+    <p>Khi bạn luyện phát âm, app dùng micro và dịch vụ nhận dạng giọng nói của hệ điều hành (Apple trên iOS, Google trên Android) để so sánh câu bạn nói với câu mẫu. Chúng tôi không ghi âm, không lưu và không gửi giọng nói của bạn lên máy chủ của mình. Việc xử lý giọng nói tuân theo chính sách quyền riêng tư của Apple hoặc Google.</p>
   </section>
 
   <section>
     <h2>Những gì chúng tôi không làm</h2>
     <ul>
-      <li>Không hiển thị quảng cáo.</li>
-      <li>Không theo dõi bạn qua các app hoặc website khác.</li>
-      <li>Không bán hay chia sẻ dữ liệu của bạn cho bên thứ ba.</li>
-      <li>Không dùng công cụ phân tích hành vi.</li>
+      <li>Không bán dữ liệu của bạn.</li>
+      <li>Không gửi tiến độ học, email hay tên của bạn cho nhà quảng cáo.</li>
+      <li>Không dùng GPS hay vị trí chính xác.</li>
+      <li>Không ghi âm giọng nói của bạn.</li>
     </ul>
   </section>
 
   <section>
     <h2>Bên cung cấp dịch vụ</h2>
-    <p>App dùng Google Firebase (Authentication và Cloud Firestore) để lưu tài khoản và tiến độ, và tải phông chữ từ Google Fonts. Google xử lý dữ liệu này theo <a href="https://firebase.google.com/support/privacy">điều khoản quyền riêng tư của Firebase</a>.</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore): lưu tài khoản và tiến độ. Xem <a href="https://firebase.google.com/support/privacy">điều khoản quyền riêng tư của Firebase</a>.</li>
+      <li><strong>Google AdMob</strong>: hiển thị quảng cáo như mô tả ở trên.</li>
+      <li><strong>Đăng nhập Google, Đăng nhập bằng Apple</strong>: chỉ khi bạn chọn cách đăng nhập này.</li>
+      <li><strong>App Store, Google Play</strong>: xử lý thanh toán Premium.</li>
+      <li><strong>Google Fonts</strong>: tải phông chữ.</li>
+    </ul>
   </section>
 
   <section>
     <h2>Xoá dữ liệu</h2>
-    <p>Trong app, vào <strong>Tiến độ → Cài đặt (biểu tượng bánh răng) → Tài khoản &amp; đồng bộ → Xoá tài khoản</strong>. Tài khoản và toàn bộ tiến độ trên máy chủ sẽ bị xoá vĩnh viễn ngay lập tức. Nếu bạn chỉ dùng chế độ khách, xoá app khỏi máy sẽ xoá dữ liệu trên máy; bạn cũng có thể gửi email để chúng tôi xoá bản sao lưu ẩn danh.</p>
+    <p>Trong app, vào <strong>Tiến độ → Cài đặt (biểu tượng bánh răng) → Tài khoản &amp; đồng bộ → Xoá tài khoản</strong>. Tài khoản, tên, email và toàn bộ tiến độ trên máy chủ sẽ bị xoá vĩnh viễn ngay lập tức. Nếu bạn chỉ dùng chế độ khách, xoá app khỏi máy sẽ xoá dữ liệu trên máy; bạn cũng có thể gửi email để chúng tôi xoá bản sao lưu ẩn danh. Lịch sử mua Premium do App Store hoặc Google Play lưu giữ theo chính sách của họ. Dữ liệu AdMob do Google lưu giữ theo chính sách của Google.</p>
   </section>
 
   <section>
     <h2>Trẻ em</h2>
-    <p>App phù hợp mọi lứa tuổi và không cố ý thu thập thông tin cá nhân của trẻ em dưới 13 tuổi. Nếu bạn cho rằng trẻ đã tạo tài khoản, hãy liên hệ để chúng tôi xoá.</p>
+    <p>App không dành cho trẻ em dưới 13 tuổi và không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng trẻ đã tạo tài khoản, hãy liên hệ để chúng tôi xoá.</p>
   </section>
 
   <section>
